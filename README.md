@@ -25,3 +25,14 @@ Ver las opciones en el screenshot de más abajo.
 
 # Screenshots.
 
+![Tetris Game Linux Console](tests/dataTetris/Tetris_01.png)
+
+![Tetris Game Linux Console](tests/dataTetris/Tetris_02.png)
+
+![Tetris Game Linux Console](tests/dataTetris/Tetris_03.png)
+
+![Tetris Game Linux Console](tests/dataTetris/Tetris_04.png)
+
+![Tetris Game Linux Console](tests/dataTetris/Tetris_05.png)
+
+![Tetris Game Linux Console](tests/dataTetris/Tetris_06.png)
