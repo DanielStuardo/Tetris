@@ -33,7 +33,7 @@ Ver las opciones en el screenshot de más abajo.
 
 Copyright (c) 2023 [Mr. Dalien](https://github.com/DanielStuardo)
 
-This software is released under the terms of the GNU General Public License v3.0. See the [LICENSE](https://github.com/DanielStuardo/Tetris/tree/main/LICENSE) file for further information.
+This software is released under the terms of the GNU General Public License v2.0. See the [LICENSE](https://github.com/DanielStuardo/Tetris/tree/main/LICENSE) file for further information.
 
 # Screenshots.
 
