@@ -1,3 +1,5 @@
+![Tetris Game Linux Console](dataTetris/Tetris_02.png)
+
 # Tetris
 Tetris - clasical game made with Gadget library for C-Linux Debian and derivatives.
 
@@ -26,8 +28,6 @@ Ver las opciones en el screenshot de más abajo.
 # Screenshots.
 
 ![Tetris Game Linux Console](dataTetris/Tetris_01.png)
-
-![Tetris Game Linux Console](dataTetris/Tetris_02.png)
 
 ![Tetris Game Linux Console](dataTetris/Tetris_03.png)
 
