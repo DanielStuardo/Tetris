@@ -72,7 +72,7 @@ void Use_mode(){
     printf(" -d1,-d2  cosaco dance.\n");
     printf(" -b1..-b5 change blocks.\n");
     printf(" -r       retro screen.\n");
-    printf(" -k       kaleidoscope.\n");
+   
     printf(" -h       this help.\n\n");
     
     printf(" Programmed by\n\n\t Mr.Dalien\n\t 2023");
@@ -99,7 +99,7 @@ int cosaco_dance=-1;
 int block_type=0; /* bloque por defecto */
 int counter_tetromino=0; /* contador de piezas repetidas. Si una pieza se repite más de 3 veces, se escoge otra */
 int green_blocks=0;   /* blocks y matriz de juego de color verde con fondo oscuro */
-int kaleidoscope=0;   /* kaleidoscopio */
+//int kaleidoscope=0;   /* kaleidoscopio */
 int wide=13;
 
 GD_VIDEO field, next_box;
@@ -155,10 +155,10 @@ Main
                 green_blocks=1;
                 kaleidoscope=0;
             }
-            if( Is_equal_str(opt_play,"-k") ){  // block kaleidoscopio: funde retinas.
-                kaleidoscope=1;
-                green_blocks=0;
-            }
+           // if( Is_equal_str(opt_play,"-k") ){  // block kaleidoscopio: funde retinas.
+           //     kaleidoscope=1;
+           //     green_blocks=0;
+           // }
             if( Is_equal_str(opt_play,"-h") ){  // help
                 Use_mode();
                 Free secure opt_play;
@@ -1118,11 +1118,11 @@ void Print_blocks(int type, int init)
            At i+2, j+3+wide;
            if ( type == 1 ){
                 if ( base[i][j] ){
-                    if( kaleidoscope ){
-                         Color(rand()%256,232); //Print "%s", block;
-                    }else{
+                    //if( kaleidoscope ){
+                    //     Color(rand()%256,232); //Print "%s", block;
+                    //}else{
                          Color(base[i][j],232);
-                    }
+                    //}
                     Print "%s", block;
                     
                 }else{
