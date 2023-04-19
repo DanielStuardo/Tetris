@@ -1,6 +1,7 @@
 <!-- ![Tetris Game Linux Console](dataTetris/Tetris_02.png) -->
 <p align="center">
-    <img src="https://raw.githubusercontent.com/DanielStuardo/Tetris/main/dataTetris/Tetris_02.png" alt="LOGO" height=500px>
+  <a href="https://github.com/DanielStuardo/Tetris">
+    <img src="https://raw.githubusercontent.com/DanielStuardo/Tetris/main/dataTetris/Tetris_02.png" alt="LOGO" height=500px></a>
 </p>
 
 # Tetris
