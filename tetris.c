@@ -5,7 +5,7 @@
   Programado por (c)Dr. Dalien.
   Ejecutar con:
   
-  ./tests/tetris.sh [opciones]
+  ./tetris.sh [opciones]
 */
 
 #include <gadget/gadget.h>
@@ -19,23 +19,23 @@ LIB_GADGET_START
 #define WHITECOLOR  15
 
 /*elementos del juego */
-const char* sound[12] = {"aplay -q tests/dataTetris/tetris_clearline.wav </dev/null >/dev/null 2>&1 &",
-                        "aplay -q tests/dataTetris/tetris_bono.wav </dev/null >/dev/null 2>&1",
-                        "aplay -q tests/dataTetris/tetris_levelUp.wav  </dev/null >/dev/null 2>&1",
-                        "aplay -q tests/dataTetris/tetris_gameOver.wav </dev/null >/dev/null 2>&1 &",
-                        "aplay -q tests/dataTetris/tetris_title_theme.wav </dev/null >/dev/null 2>&1 &",
-                        "aplay -q tests/dataTetris/BombExplosion.wav </dev/null >/dev/null 2>&1",
-                        "aplay -q tests/dataTetris/hey.wav </dev/null >/dev/null 2>&1 &",
-                        "aplay -q tests/dataTetris/God_bless_amerika.wav </dev/null >/dev/null 2>&1 &",
-                        "aplay -q tests/dataTetris/tetris_levelUpDance.wav </dev/null >/dev/null 2>&1 &",
-                        "aplay -q tests/dataTetris/telon_up.wav </dev/null >/dev/null 2>&1 &",
-                        "aplay -q tests/dataTetris/tetris_giro.wav </dev/null >/dev/null 2>&1 &",
-                        "aplay -q tests/dataTetris/tetris_tap.wav </dev/null >/dev/null 2>&1 &"};
+const char* sound[12] = {"aplay -q dataTetris/tetris_clearline.wav </dev/null >/dev/null 2>&1 &",
+                        "aplay -q dataTetris/tetris_bono.wav </dev/null >/dev/null 2>&1",
+                        "aplay -q dataTetris/tetris_levelUp.wav  </dev/null >/dev/null 2>&1",
+                        "aplay -q dataTetris/tetris_gameOver.wav </dev/null >/dev/null 2>&1 &",
+                        "aplay -q dataTetris/tetris_title_theme.wav </dev/null >/dev/null 2>&1 &",
+                        "aplay -q dataTetris/BombExplosion.wav </dev/null >/dev/null 2>&1",
+                        "aplay -q dataTetris/hey.wav </dev/null >/dev/null 2>&1 &",
+                        "aplay -q dataTetris/God_bless_amerika.wav </dev/null >/dev/null 2>&1 &",
+                        "aplay -q dataTetris/tetris_levelUpDance.wav </dev/null >/dev/null 2>&1 &",
+                        "aplay -q dataTetris/telon_up.wav </dev/null >/dev/null 2>&1 &",
+                        "aplay -q dataTetris/tetris_giro.wav </dev/null >/dev/null 2>&1 &",
+                        "aplay -q dataTetris/tetris_tap.wav </dev/null >/dev/null 2>&1 &"};
 
-const char *music[4] = {"aplay -q tests/dataTetris/tetris_bradinsky_1.wav </dev/null >/dev/null 2>&1 &",
-                        "aplay -q tests/dataTetris/tetris_troika_2.wav </dev/null >/dev/null 2>&1 &",
-                        "aplay -q tests/dataTetris/tetris_loginska_3.wav </dev/null >/dev/null 2>&1 &",
-                        "aplay -q tests/dataTetris/tetris_karinka_4.wav </dev/null >/dev/null 2>&1 &"};
+const char *music[4] = {"aplay -q dataTetris/tetris_bradinsky_1.wav </dev/null >/dev/null 2>&1 &",
+                        "aplay -q dataTetris/tetris_troika_2.wav </dev/null >/dev/null 2>&1 &",
+                        "aplay -q dataTetris/tetris_loginska_3.wav </dev/null >/dev/null 2>&1 &",
+                        "aplay -q dataTetris/tetris_karinka_4.wav </dev/null >/dev/null 2>&1 &"};
 /* funciones */
 
 GD_VIDEO Put_field ( GD_VIDEO field, int complexity);
@@ -63,7 +63,7 @@ void Use_mode(){
     Bold;
     printf("\n TETRIS - by Alekséi\n");
     printf("             Pázhitnov\n"); Bold_off;
-    printf("\n Mode use:\n ./tests/tetris.sh\n\n");
+    printf("\n Mode use:\n ./tetris.sh\n\n");
     //printf("\n options:\n   [-ns][-1|-2|-3|-4]\n");
     //printf("   [-d1|-d2]\n   [-b1..-b4][-h]\n\n");
     printf(" Options:\n");
@@ -377,7 +377,7 @@ int Load_high_score()
 {
    int high=0;
    String file;
-   Let (file, "tests/dataTetris/high");
+   Let (file, "dataTetris/high");
    
    switch(complexity){
        case 1: { Cat( file, "_normal.txt" ); break; }
@@ -399,7 +399,7 @@ void Save_score(int score, int high)
 {
    String file;
    
-   Let( file, "tests/dataTetris/high");
+   Let( file, "dataTetris/high");
    switch(complexity){
        case 1: { Cat( file, "_normal.txt" ); break; }
        case 2: { Cat( file, "_middle.txt" ); break; }
