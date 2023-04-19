@@ -1,4 +1,7 @@
-![Tetris Game Linux Console](dataTetris/Tetris_02.png)
+<!-- ![Tetris Game Linux Console](dataTetris/Tetris_02.png) -->
+<p align="center">
+    <img src="https://raw.githubusercontent.com/DanielStuardo/Tetris/main/dataTetris/Tetris_02.png" alt="LOGO" height=200px>
+</p>
 
 # Tetris
 Tetris - clasical game made with Gadget library for C-Linux Debian and derivatives.
